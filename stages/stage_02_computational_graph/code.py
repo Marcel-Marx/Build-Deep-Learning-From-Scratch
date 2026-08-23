@@ -42,7 +42,7 @@ class Value(Stage1_Value):
     def __repr__(self):
         """Graph-aware debug string, e.g. ``Value(data=3.0, op='+')``."""
         # TODO: implement repr surfacing data and _op
-        raise NotImplementedError("stage_02: implement Value.__repr__")
+        return f"Value(data={self.data}, op={self.op})"
 
 
 def trace(root):
